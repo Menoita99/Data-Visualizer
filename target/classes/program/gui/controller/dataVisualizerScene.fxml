@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.gui.controller.DataVisualizer">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar>
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Menu">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#addChart" text="Open" />
+                              <MenuItem mnemonicParsing="false" onAction="#removeChart" text="remove" />
+                              <MenuItem mnemonicParsing="false" onAction="#openNewWindow" text="New" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ScrollPane prefHeight="15.0" prefWidth="1100.0" VBox.vgrow="NEVER">
+                     <content>
+                        <HBox fx:id="checkBoxPanel" spacing="3.0" />
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane prefHeight="600.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox fx:id="chartPanel" prefWidth="1000.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
