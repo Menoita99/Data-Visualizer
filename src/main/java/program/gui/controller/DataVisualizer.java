@@ -213,7 +213,7 @@ public class DataVisualizer extends Application{
 
 		 try {
 			file.createNewFile(); 												//create new file
-	        System.out.println("File is created! -> "+file.getAbsolutePath());
+	        System.out.println("File was created! -> "+file.getAbsolutePath());
 		} catch (IOException e1) {e1.printStackTrace();} 
 		 
 
@@ -230,8 +230,8 @@ public class DataVisualizer extends Application{
 	
 	
 	/**
-	 * This method writes an file with the data given 
-	 * inside java resources
+	 * This method writes a file with the data given 
+	 * inside of java resources
 	 * 
 	 * (!Attention) If file already exits this will override it
 	 * 
